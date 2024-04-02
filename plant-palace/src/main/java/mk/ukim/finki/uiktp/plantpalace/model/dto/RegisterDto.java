@@ -7,7 +7,6 @@ import mk.ukim.finki.uiktp.plantpalace.model.enumerations.Role;
 public class RegisterDto {
     private String username;
     private String password;
-    private String repeatPasword;
     private String name;
     private Role role;
 }

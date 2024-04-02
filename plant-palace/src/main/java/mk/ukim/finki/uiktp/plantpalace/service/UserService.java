@@ -5,6 +5,5 @@ import mk.ukim.finki.uiktp.plantpalace.model.User;
 import java.util.Optional;
 
 public interface UserService {
-    public Optional<User> findByUsername(String username);
-
+    Optional<User> findByUsername(String username);
 }

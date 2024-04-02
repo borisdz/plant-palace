@@ -26,9 +26,6 @@ public class User {
     @Enumerated(value = EnumType.STRING)
     private Role role;
 
-//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-//    private List<Cart> carts;
-
     public User(String password, String username, Role role){
         this.password=password;
         this.username=username;
