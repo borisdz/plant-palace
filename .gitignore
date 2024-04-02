@@ -1,0 +1,13 @@
+
+*.dll
+*.pdb
+*.cache
+.DS_Store
+.vscode/*
+
+plant-palace/.mvn/
+plant-palace/bin/
+plant-palace/.idea/
+
+plant-palace-frontend/.angular/
+plant-palace-frontend/node_modules/
