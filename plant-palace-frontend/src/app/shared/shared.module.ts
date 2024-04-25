@@ -7,6 +7,9 @@ import { TextboxComponent } from './components/textbox/textbox.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { ImageUploadComponent } from './components/image-upload/image-upload.component';
 import { NavigationDropdownComponent } from './components/navigation-dropdown/navigation-dropdown.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,6 +25,9 @@ import { NavigationDropdownComponent } from './components/navigation-dropdown/na
   ],
   imports: [
     CommonModule,
+    NgbCollapseModule,
+    NgbDropdownModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,

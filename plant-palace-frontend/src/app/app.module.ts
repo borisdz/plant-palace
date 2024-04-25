@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { ShopModule } from './shop/shop.module';
 import { SharedModule } from './shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    NgbModule,
     AuthenticationModule,
     ShopModule,
     SharedModule,
+    CommonModule,
+    RouterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

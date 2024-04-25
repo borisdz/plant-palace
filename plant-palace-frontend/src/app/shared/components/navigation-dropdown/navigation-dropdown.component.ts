@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navigation-dropdown',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-dropdown.component.scss']
 })
 export class NavigationDropdownComponent {
+  @Input() items: string[] = [];
 
 }
