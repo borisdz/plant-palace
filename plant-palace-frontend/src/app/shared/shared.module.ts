@@ -9,6 +9,7 @@ import { ImageUploadComponent } from './components/image-upload/image-upload.com
 import { NavigationDropdownComponent } from './components/navigation-dropdown/navigation-dropdown.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -26,6 +27,7 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     NgbCollapseModule,
     NgbDropdownModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
