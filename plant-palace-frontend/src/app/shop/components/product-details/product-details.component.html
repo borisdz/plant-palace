@@ -1,1 +1,8 @@
-<p>product-details works!</p>
+<div class="card m-5">
+    <img [src]="product.imageUrl" class="picsum-img-wrapper" alt="{{ product.name }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+    </div>
+    <div>Price: {{product.price}}</div>
+    <div>Quantity: {{product.quantity}}</div>
+</div>

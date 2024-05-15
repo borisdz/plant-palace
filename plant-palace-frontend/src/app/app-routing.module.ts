@@ -6,6 +6,7 @@ import { HomeComponent } from './shop/components/home/home.component';
 import { ProductListComponent } from './shop/components/product-list/product-list.component';
 import { ShoppingCartComponent } from './shop/components/shopping-cart/shopping-cart.component';
 import { AboutUsComponent } from './shop/components/about-us/about-us.component';
+import { ProductDetailsComponent } from './shop/components/product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: ':productsType/:categoryName',
     component: ProductListComponent
+  },
+  {
+    path: ':productsType/:categoryName/:id/details',
+    component: ProductDetailsComponent
   },
   {
     path: 'shopping-cart',

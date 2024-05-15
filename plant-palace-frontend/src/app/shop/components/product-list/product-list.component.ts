@@ -23,7 +23,7 @@ export class ProductListComponent {
   }
 
   fetchProducts() {
-    this.http.get("./assets/products/plants-flowers.json").subscribe((result) => {
+    this.http.get(`./assets/products/${this.type}-${this.category}.json`).subscribe((result) => {
       this.products = result as IProduct[];
     })
   }
