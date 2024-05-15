@@ -1,14 +1,26 @@
 [
     {
+        "id": 1,
         "name": "Lilies",
         "description": "This is a bouqet of Lilies.",
         "price": 10000,
-        "quantity": 3
+        "quantity": 3,
+        "imageUrl": "../../../../assets/images/plant-product.png"
     },
     {
+        "id": 2,
         "name": "Roses",
-        "description": "This is a bouqet of roses.",
+        "description": "This is a bouqet of red roses.",
         "price": 200,
-        "quantity": 5
+        "quantity": 5,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 3,
+        "name": "White Roses",
+        "description": "This is a bouqet of white roses.",
+        "price": 350,
+        "quantity": 3,
+        "imageUrl": "../../../../assets/images/plant-product.png"
     }
 ]

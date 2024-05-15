@@ -1,9 +1,12 @@
 {{ type | uppercase }} > {{ category | uppercase }}
 
-<div *ngFor="let product of products">
-    <div>Name: {{product.name}}</div>
-    <div>Description: {{product.description}}</div>
-    <div>Price: {{product.price}}</div>
-    <div>Quantity: {{product.quantity}}</div>
-    <br/>
+<div class="col-lg-3 col-sm-7" *ngFor="let product of products">
+    <a href="{{type}}/{{category}}/{{product.id}}/details">
+        <div class="card m-5">
+            <img [src]="product.imageUrl" class="picsum-img-wrapper" alt="{{ product.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+            </div>
+        </div>
+    </a>
 </div>
