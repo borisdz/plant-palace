@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Lilies",
+        "description": "This is a bouqet of Lilies.",
+        "price": 10000,
+        "quantity": 3
+    },
+    {
+        "name": "Roses",
+        "description": "This is a bouqet of roses.",
+        "price": 200,
+        "quantity": 5
+    }
+]
