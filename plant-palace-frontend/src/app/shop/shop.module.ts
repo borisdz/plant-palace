@@ -6,6 +6,7 @@ import { ProductListItemComponent } from './components/product-list-item/product
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 
@@ -16,6 +17,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     ProductListItemComponent,
     ProductDetailsComponent,
     ShoppingCartComponent,
+    AboutUsComponent,
   ],
   imports: [
     CommonModule,
