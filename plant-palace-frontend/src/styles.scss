@@ -18,6 +18,17 @@ $light: #CFD3D2;
     font-family: 'Inika';
 }
 
+.icon-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-style:hover {
+    color: white;
+}
+
+
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import '@fortawesome/fontawesome-free/css/all.css';
 

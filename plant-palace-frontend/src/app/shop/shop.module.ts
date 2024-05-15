@@ -5,6 +5,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductListItemComponent } from './components/product-list-item/product-list-item.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -17,7 +18,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     ShoppingCartComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbCarouselModule,
   ]
 })
 export class ShopModule { }
