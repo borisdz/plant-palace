@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Brown Leather Gloves",
+        "description": "A pair of brown gardening gloves.",
+        "price": 400,
+        "quantity": 4
+    },
+    {
+        "name": "Black Gardening Gloves",
+        "description": "A pair of black gloves.",
+        "price": 8800,
+        "quantity": 7
+    }
+]
