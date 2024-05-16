@@ -8,6 +8,7 @@ import { ShoppingCartComponent } from './shop/components/shopping-cart/shopping-
 import { AboutUsComponent } from './shop/components/about-us/about-us.component';
 import { ProductDetailsComponent } from './shop/components/product-details/product-details.component';
 import { ContactUsComponent } from './shop/components/contact-us/contact-us.component';
+import { ProfileComponent } from './shop/components/profile/profile.component';
 
 const routes: Routes = [
   {
