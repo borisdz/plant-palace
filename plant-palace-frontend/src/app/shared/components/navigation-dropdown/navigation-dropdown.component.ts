@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IDropdownItem } from '../../models/dropdown-item';
 
 @Component({
   selector: 'app-navigation-dropdown',
@@ -6,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./navigation-dropdown.component.scss']
 })
 export class NavigationDropdownComponent {
-  @Input() items: string[] = [];
+  @Input() items: IDropdownItem[] = [];
 
 }

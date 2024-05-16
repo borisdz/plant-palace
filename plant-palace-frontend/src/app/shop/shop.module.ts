@@ -6,6 +6,9 @@ import { ProductListItemComponent } from './components/product-list-item/product
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -16,10 +19,13 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     ProductListItemComponent,
     ProductDetailsComponent,
     ShoppingCartComponent,
+    AboutUsComponent,
+    ContactUsComponent,
   ],
   imports: [
     CommonModule,
     NgbCarouselModule,
+    SharedModule,
   ]
 })
 export class ShopModule { }

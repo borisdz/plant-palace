@@ -1,1 +1,72 @@
-<p>product-list works!</p>
+<!-- <div class="container">
+    <div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </div>
+    <div>
+        {{ type | uppercase }} > {{ category | uppercase }}
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of products">
+            <div class="card m-3 w-50">
+                <a href="{{type}}/{{category}}/{{product.id}}/details">
+                    <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="container">
+    <div class="text-center m-5">
+        <form class="form-inline d-inline-block">
+            <input class="form-control mr-sm-2 form-control bg-primary border border-dark" type="search" placeholder="Search for {{category}}" aria-label="Search" style="width: 400px;">
+        </form>
+    </div>
+    <div class="text-center mb-3">
+        {{ type | uppercase }} > {{ category | uppercase }}
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of products">
+            <div class="card m-2 w-50">
+                <a href="{{type}}/{{category}}/{{product.id}}/details">
+                    <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<div class="container">
+    <div class="text-center m-5">
+        <form class="form-inline d-inline-block">
+            <input class="form-control mr-sm-2 form-control bg-primary border border-dark" type="search" placeholder="Search for {{category}}" aria-label="Search" style="width: 400px;">
+        </form>
+    </div>
+    <div class="text-center mb-3">
+        {{ type | uppercase }} > {{ category | uppercase }}
+    </div>
+    <div class="row justify-content-center m-5">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of products">
+            <div class="card my-2 mx-2 w-75">
+                <a href="{{type}}/{{category}}/{{product.id}}/details">
+                    <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
