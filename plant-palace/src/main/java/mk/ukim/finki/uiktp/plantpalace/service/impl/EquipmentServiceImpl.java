@@ -17,11 +17,19 @@ public class EquipmentServiceImpl implements EquipmentService {
         this.equipmentRepository = equipmentRepository;
     }
 
-    // TODO: Implement add Equipment (?)
     @Override
     public Optional<Equipment> addEquipment(EquipmentDto equipmentDto) {
-//        Equipment equipment = new Equipment();
-//        equipment.set
+        Equipment equipment = new Equipment();
+        equipment.setName(equipmentDto.getName());
+        equipment.setDescription(equipmentDto.getDescription());
+        equipment.setDiscount(equipmentDto.getDiscount());
+        equipment.setPrice(equipmentDto.getPrice());
+        equipment.setQuantity(equipmentDto.getQuantity());
+        equipment.setTotalPrice(equipmentDto.getTotalPrice());
+        equipment.setFileExtension(equipmentDto.getFileExtension());
+        equipment.setFilePath(equipmentDto.getFilePath());
+        equipment.setSlug(equipmentDto.getSlug());
+        equipment.setCategory(equipmentDto.getCategory());
         return Optional.empty();
     }
 
@@ -35,10 +43,19 @@ public class EquipmentServiceImpl implements EquipmentService {
         return this.equipmentRepository.findById(id);
     }
 
-    // TODO: implement edit Equipment
     @Override
     public Optional<Equipment> edit(Long id, EquipmentDto equipmentDto) {
-
+        Equipment eq = this.equipmentRepository.findById(id).get();
+        eq.setName(equipmentDto.getName());
+        eq.setDescription(equipmentDto.getDescription());
+        eq.setDiscount(equipmentDto.getDiscount());
+        eq.setPrice(equipmentDto.getPrice());
+        eq.setQuantity(equipmentDto.getQuantity());
+        eq.setTotalPrice(equipmentDto.getTotalPrice());
+        eq.setFileExtension(equipmentDto.getFileExtension());
+        eq.setFilePath(equipmentDto.getFilePath());
+        eq.setSlug(equipmentDto.getSlug());
+        eq.setCategory(equipmentDto.getCategory());
         return Optional.empty();
     }
 
