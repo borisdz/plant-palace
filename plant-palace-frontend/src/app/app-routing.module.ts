@@ -8,6 +8,7 @@ import { ShoppingCartComponent } from './shop/components/shopping-cart/shopping-
 import { AboutUsComponent } from './shop/components/about-us/about-us.component';
 import { ProductDetailsComponent } from './shop/components/product-details/product-details.component';
 import { ContactUsComponent } from './shop/components/contact-us/contact-us.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,19 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsComponent
   },
+  {
+    path: 'not-found',
+    component: NotFoundComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: '/not-found'
+  }
 ];
 
 @NgModule({
