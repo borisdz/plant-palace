@@ -23,6 +23,9 @@ public class Product {
     private byte[] filePath;
     private String fileExtension;
     private String slug;
+
+    @ManyToOne
+    private Plant plant;
     public void setFileExtension(String fileExtension) {
         this.fileExtension = fileExtension;
     }
@@ -40,4 +43,16 @@ public class Product {
         this.slug = slug;
     }
 
+    public Product(String name, String description, Double price, Double discount, Double totalPrice, Integer quantity, byte[] filePath, String fileExtension, String slug, Plant plant) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.discount = discount;
+        this.totalPrice = totalPrice;
+        this.quantity = quantity;
+        this.filePath = filePath;
+        this.fileExtension = fileExtension;
+        this.slug = slug;
+        this.plant = plant;
+    }
 }
