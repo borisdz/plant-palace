@@ -29,7 +29,6 @@ public class EquipmentServiceImpl implements EquipmentService {
         equipment.setFileExtension(equipmentDto.getFileExtension());
         equipment.setFilePath(equipmentDto.getFilePath());
         equipment.setSlug(equipmentDto.getSlug());
-        equipment.setCategory(equipmentDto.getCategory());
         return Optional.empty();
     }
 
@@ -55,12 +54,11 @@ public class EquipmentServiceImpl implements EquipmentService {
         eq.setFileExtension(equipmentDto.getFileExtension());
         eq.setFilePath(equipmentDto.getFilePath());
         eq.setSlug(equipmentDto.getSlug());
-        eq.setCategory(equipmentDto.getCategory());
         return Optional.empty();
     }
 
     @Override
     public void delete(Long id) {
-        this.delete(id);
+        this.equipmentRepository.deleteById(id);
     }
 }

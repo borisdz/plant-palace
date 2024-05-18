@@ -10,9 +10,4 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Equipment extends Product{
-
-    private EquipmentCategory category;
-    public Equipment(EquipmentCategory category){
-        this.category=category;
-    }
 }
