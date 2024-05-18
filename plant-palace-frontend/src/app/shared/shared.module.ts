@@ -10,6 +10,7 @@ import { NavigationDropdownComponent } from './components/navigation-dropdown/na
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -22,6 +23,7 @@ import { RouterModule } from '@angular/router';
     TextareaComponent,
     ImageUploadComponent,
     NavigationDropdownComponent,
+    NotFoundComponent,
   ],
   imports: [
     CommonModule,

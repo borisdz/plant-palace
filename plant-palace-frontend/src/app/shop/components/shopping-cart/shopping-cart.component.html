@@ -1,1 +1,14 @@
-<p>shopping-cart works!</p>
+<div class="container p-5 ">
+    <div class="title-container">
+        {{ title }}
+    </div>
+    <div [ngSwitch]="products.length === 0">
+        <div *ngSwitchCase="true">
+            {{ empptyShoppingCartMessage }}</div>
+        <div *ngSwitchDefault>
+            <div *ngFor="let product of products">
+                {{ product.name }} ${{product.itemPrice}} x {{ product.selectedQuantity}}pcs = {{ product.itemPrice * product.selectedQuantity }}
+            </div>
+        </div>
+    </div>
+</div>

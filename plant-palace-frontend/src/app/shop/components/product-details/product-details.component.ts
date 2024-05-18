@@ -21,6 +21,7 @@ export class ProductDetailsComponent {
   category: string = '';
   id: number = 0;
 
+  selectedQuantity: number = 0;
 
   constructor(private router: Router, private http: HttpClient) {
     router.events.subscribe((val) => {
@@ -43,5 +44,13 @@ export class ProductDetailsComponent {
         imageUrl: ''
       };
     })
+  }
+
+  updateSelectedQuantity(value: number){
+    this.selectedQuantity = this.selectedQuantity + value;
+  }
+
+  addToCart(){
+    
   }
 }
