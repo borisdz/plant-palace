@@ -1,11 +1,12 @@
 package mk.ukim.finki.uiktp.plantpalace.model;
 
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 
 @Entity
@@ -19,25 +20,18 @@ public class Plant extends Product {
 
     private String ime;
 
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Plant_Category plantCategory;
-
     public Plant(Long id, String name, String description, Double price, Double discount, Double totalPrice, Integer quantity, byte[] filePath, String fileExtension, String slug,
-                 Plant plant, String ime, Plant_Category plantCategory) {
+                 Plant plant, String ime) {
         super(id, name, description, price, discount, totalPrice, quantity, filePath, fileExtension, slug, plant);
         this.ime = ime;
-        this.plantCategory = plantCategory;
     }
 
-    public Plant(String ime, Plant_Category plantCategory) {
+    public Plant(String ime) {
         this.ime = ime;
-        this.plantCategory = plantCategory;
     }
 
-    public Plant(String name, String description, Double price, Double discount, Double totalPrice, Integer quantity, byte[] filePath, String fileExtension, String slug, String ime, Plant_Category plantCategory) {
+    public Plant(String name, String description, Double price, Double discount, Double totalPrice, Integer quantity, byte[] filePath, String fileExtension, String slug, String ime) {
         super(name, description, price, discount, totalPrice, quantity, filePath, fileExtension, slug);
         this.ime = ime;
-        this.plantCategory = plantCategory;
     }
 }

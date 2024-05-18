@@ -32,7 +32,6 @@ public class PlantServiceImpl implements PlantService {
         Plant plant = plantRepository.findById(id).orElse(null);
         if (plant != null) {
             plant.setIme(plantDetails.getIme());
-            plant.setPlantCategory(plantDetails.getPlantCategory());
             plant.setName(plantDetails.getName());
             plant.setDescription(plantDetails.getDescription());
             plant.setPrice(plantDetails.getPrice());
