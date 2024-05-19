@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsComponent
   },
+  {
+    path: 'profile',
+    component: ProfileComponent
+  },
 ];
 
 @NgModule({

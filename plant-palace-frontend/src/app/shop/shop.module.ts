@@ -9,6 +9,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 
@@ -21,11 +23,13 @@ import { SharedModule } from '../shared/shared.module';
     ShoppingCartComponent,
     AboutUsComponent,
     ContactUsComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,
     NgbCarouselModule,
     SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class ShopModule { }
