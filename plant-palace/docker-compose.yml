@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+ postgres:
+  image: postgres
+  restart: always
+  container_name: postgres-plant-palace
+  environment:
+   POSTGRES_USER: postgres
+   POSTGRES_PASSWORD: b17i19
+   POSTGRES_DB: plant-palace
+  ports:
+   - "5432:5432"
+  networks:
+   - plant-palace-network
+
+ spring-boot-app:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  environment:
+   SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/plant-palace
+   SPRING_DATASOURCE_USERNAME: postgres
+   SPRING_DATASOURCE_PASSWORD: b17i19
+  ports:
+   - "9090:9090"
+  networks:
+   - plant-palace-network
+volumes:
+ init:
+networks:
+ plant-palace-network:
+  driver: bridge
