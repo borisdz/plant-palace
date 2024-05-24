@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ICartProduct } from '../../models/cart-product';
+import { ProductService } from '../../services/product.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,15 +9,33 @@ import { ICartProduct } from '../../models/cart-product';
   styleUrls: ['./shopping-cart.component.scss']
 })
 export class ShoppingCartComponent {
-  title: string = 'Shopping Cart';
+  title: string = 'Your Shopping Cart';
   empptyShoppingCartMessage: string = 'Your shopping cart is empty. Browse products and add them to your cart.'
 
-  products: ICartProduct[] = [{
-    id: 0,
-    name: 'Item',
-    description: '',
-    itemPrice: 5,
-    selectedQuantity: 5,
-    imageUrl: ''
-  }];
+  products: ICartProduct[] = [];
+  constructor(private productService: ProductService) { }
+
+  ngOnInit(): void {
+    this.productService.getCartProducts().subscribe((data: ICartProduct[]) => {
+      this.products = data;
+    });
+  }
+
+  updateSelectedQuantity(value: number, id: number) {
+    const index = this.products.findIndex(product => product.id === id);
+    if (index !== -1) {
+      this.products[index].selectedQuantity += value;
+    }
+  }
+
+  deleteProduct(id: number) {
+    const index = this.products.findIndex(product => product.id === id);
+    if (index !== -1) {
+      this.products.splice(index, 1);
+    }
+  }
+
+  orderNow(): void { }
+
 }
+

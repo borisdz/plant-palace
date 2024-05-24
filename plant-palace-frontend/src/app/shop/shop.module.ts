@@ -9,6 +9,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -26,6 +27,7 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     NgbCarouselModule,
     SharedModule,
+    RouterModule,
   ]
 })
 export class ShopModule { }
