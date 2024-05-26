@@ -4,7 +4,7 @@
     </div>
     <div class="m-3 mt-5 bg-white p-3">
         <form [formGroup]="formGroup" (ngSubmit)="submit()">
-            <div class="container p-5">
+            <div class="container border p-5">
                 <div class="row justify-content-between">
                     <div class="col-sm-5">
                         <div class="row">
@@ -12,6 +12,13 @@
                                 <label class="form-label" for="name"><b>Name</b></label>
                                 <input type="text" class="form-control bg-white border border-dark"
                                     placeholder="Enter name" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="m-3 px-5 col-sm-12">
+                                <label class="form-label" for="email"><b>Email Address</b></label>
+                                <input type="text" class="form-control bg-white border border-dark"
+                                    placeholder="Enter email address" formControlName="email">
                             </div>
                         </div>
                         <div class="row">
@@ -28,13 +35,6 @@
                                     placeholder="Enter zipcode" formControlName="zipcode">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="m-3 px-5 col-sm-12">
-                                <label class="form-label" for="telephone"><b>Telephone</b></label>
-                                <input type="text" class="form-control bg-white border border-dark"
-                                    placeholder="Enter telephone" formControlName="telephone">
-                            </div>
-                        </div>
                     </div>
                     <div class="col-sm-5">
                         <div class="row">
@@ -46,24 +46,18 @@
                         </div>
                         <div class="row">
                             <div class="m-3 px-5 col-sm-12">
-                                <label class="form-label" for="info"><b>Info</b></label>
-                                <input type="text" class="form-control bg-white border border-dark"
-                                    placeholder="Enter info" formControlName="info">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="m-3 px-5 col-sm-12">
                                 <label class="form-label" for="city"><b>City</b></label>
                                 <input type="text" class="form-control bg-white border border-dark"
                                     placeholder="Enter city" formControlName="city">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row justify-content-end">
-                    <div class="m-3 d-flex justify-content-end pt-4">
-                        <button type="submit" [disabled]="formGroup.invalid"
-                            class="bg-primary text-center text-dark shadow button px-4 py-2">Save</button>
+                        <div class="row">
+                            <div class="m-3 px-5 col-sm-12">
+                                <label class="form-label" for="telephone"><b>Telephone</b></label>
+                                <input type="text" class="form-control bg-white border border-dark"
+                                    placeholder="Enter telephone" formControlName="telephone">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

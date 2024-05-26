@@ -9,22 +9,24 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class ProfileComponent implements OnInit {
   public formGroup: FormGroup = this.formBuilder.group({});
+  disable: boolean = true;
 
   constructor(
     @Inject(FormBuilder) private readonly formBuilder: FormBuilder,) {}  // No need for @Inject here
 
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
-      name: ['', Validators.required],
-      surname: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      name: ['Test', Validators.required],
+      surname: ['Test', Validators.required],
+      password: ['test', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(6)]],
-      email: ['', [Validators.required, Validators.email]],
-      address: ['', Validators.required],
-      zipcode: [0, [Validators.required, Validators.pattern('^[0-9]{5}$')]],
-      telephone: [0, [Validators.required, Validators.pattern('^[0-9]{10}$')]],
-      info: ['', Validators.required],
-      city: ['', Validators.required]
+      email: ['test@gmail.com', [Validators.required, Validators.email]],
+      address: ['Ul. Ruger Boshkovikj 16', Validators.required],
+      zipcode: [1000, [Validators.required, Validators.pattern('^[0-9]{5}$')]],
+      telephone: [2034953, [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      info: ['Test info', Validators.required],
+      city: ['Skopje', Validators.required],
+      emailAddress: ['', Validators.required],
     });
   }
 

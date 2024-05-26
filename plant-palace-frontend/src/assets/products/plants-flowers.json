@@ -3,13 +3,13 @@
         "id": 1,
         "name": "Lilies",
         "description": "This is a bouqet of Lilies.",
-        "price": 10000,
+        "price": 1000,
         "quantity": 3,
         "imageUrl": "../../../../assets/images/plant-product.png"
     },
     {
         "id": 2,
-        "name": "Roses",
+        "name": "Red Roses",
         "description": "This is a bouqet of red roses.",
         "price": 200,
         "quantity": 5,

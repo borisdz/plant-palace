@@ -10,7 +10,8 @@ import { Observable } from 'rxjs';
 })
 export class ShoppingCartComponent {
   title: string = 'Your Shopping Cart';
-  empptyShoppingCartMessage: string = 'Your shopping cart is empty. Browse products and add them to your cart.'
+  empptyShoppingCartMessage: string = 'Your shopping cart is empty. Browse products and add them to your cart.';
+  orderPlaced: boolean = false;
 
   products: ICartProduct[] = [];
   constructor(private productService: ProductService) { }
@@ -43,7 +44,10 @@ export class ShoppingCartComponent {
     return sum;
   }
 
-  orderNow(): void { }
+  orderNow(): void { 
+    this.products = []
+    this.orderPlaced = true;
+  }
 
 }
 
