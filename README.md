@@ -7,7 +7,7 @@ Frontend: Angular (Typescript)
 # Starting the project
 
 ## Backend
-Open the `plant-palace` folder with a file explorer or by opening the project with Intellij. Open a terminal and run the command
+Open the `plant-palace` folder with a file explorer or by opening the project with an IDE for Java. Open a terminal and run the command
 ```
 docker compose up
 ```
