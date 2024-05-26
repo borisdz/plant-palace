@@ -15,7 +15,7 @@ import { ProductService } from './shop/services/product.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
