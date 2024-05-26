@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import mk.ukim.finki.uiktp.plantpalace.model.enumerations.Status;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Data
@@ -37,5 +38,9 @@ public class Order {
     @ManyToOne
     @JoinColumn(name= "ct_city")
     private City city;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "order_id")
+    private List<OrderedProduct> orderedProducts;
 
 }
