@@ -6,6 +6,13 @@ Frontend: Angular (Typescript)
 
 # Starting the project
 
+## Backend
+Open the `plant-palace` folder with a file explorer or by opening the project with an IDE for Java. Open a terminal and run the command
+```
+docker compose up
+```
+If you have the Docker client running the database and the web application should start. The database is listening on address 0.0.0.0 port 5432, and the web application is running on http://localhost:9090.
+
 ## Frontend
 
 Open the plant-palace-frontend folder in Visual Studio Code and open a new terminal. Run the following commands
