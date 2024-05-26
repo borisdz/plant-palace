@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ProductService } from './shop/services/product.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule,
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
