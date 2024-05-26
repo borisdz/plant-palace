@@ -35,6 +35,14 @@ export class ShoppingCartComponent {
     }
   }
 
+  calculateTotalPrice() : number{
+    let sum = 0;
+    this.products.forEach(product => {
+      sum += product.itemPrice * product.selectedQuantity
+    })
+    return sum;
+  }
+
   orderNow(): void { }
 
 }
