@@ -28,6 +28,34 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="m-3 px-5 col-sm-6">
+                        <label for="address"><b>Address</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter address"
+                            name="address" required formControlName="address">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="city"><b>City</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter city"
+                            name="city" required formControlName="coty">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="zipcode"><b>Zipcode</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter zipcode"
+                            name="zipcode" required formControlName="zipcode">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="zipcode"><b>Telephone</b></label>
+                        <input type="phone" class="form-control bg-primary border border-dark" placeholder="Enter telephone"
+                            name="phone" required formControlName="phone">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
                         <label for="password"><b>Password</b></label>
                         <input type="password" class="form-control bg-primary border border-dark"
                             placeholder="Enter Password" name="password" required formControlName="password">
@@ -36,7 +64,7 @@
                 <div class="row justify-content-center">
                     <div class="mt-5 mb-5 d-flex justify-content-center pt-4">
                         <button type="submit" class="bg-dark text-center text-white shadow button px-4 py-2"
-                            [disabled]="formGroup.invalid">Register</button>
+                            routerLink="/login">Register</button>
                     </div>
                 </div>
             </div>

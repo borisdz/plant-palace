@@ -23,6 +23,8 @@ export class ProductDetailsComponent {
 
   selectedQuantity: number = 0;
 
+  isProductAdded: boolean = false;
+
   constructor(private router: Router, private http: HttpClient) {
     router.events.subscribe((val) => {
       this.type = this.router.url.split('/').at(1) ?? '';
@@ -50,7 +52,7 @@ export class ProductDetailsComponent {
     this.selectedQuantity = this.selectedQuantity + value;
   }
 
-  addToCart(){
-    
+  addToCart() {
+    this.isProductAdded = true;
   }
 }

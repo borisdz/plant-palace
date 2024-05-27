@@ -21,22 +21,12 @@
     },
     {
         "id": 3,
-        "name": "White Roses",
-        "description": "This is a bouqet of white roses.",
-        "itemPrice": 350,
+        "name": "Brown Leather Gloves",
+        "description": "A pair of brown gardening gloves.",
+        "itemPrice": 400,
         "total": 1050,
         "selectedQuantity": 1,
-        "inStock": 6,
-        "imageUrl": "../../../../assets/images/plant-product.png"
-    },
-    {
-        "id": 4,
-        "name": "Sunflowers",
-        "description": "This is a bouqet of sunflowers.",
-        "itemPrice": 450,
-        "total": 900,
-        "selectedQuantity": 5,
-        "inStock": 5,
-        "imageUrl": "../../../../assets/images/plant-product.png"
+        "inStock": 4,
+        "imageUrl": "../../../../assets/images/equipment-product.png"
     }
 ]
